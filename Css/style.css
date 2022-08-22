@@ -163,7 +163,7 @@ h1{
         display: grid;
     }
         .btn-wrap{
-            grid-row-start: 11;
+            grid-row-start: 10;
             
             
         }
