@@ -32,7 +32,7 @@ body{
     color: #fff;
     font-size: 5rem;
     /* perspective: 900px; */
-    grid-row-start: 7;
+    grid-row-start: 6;
     
 
 }
@@ -108,10 +108,8 @@ body{
 
 
 .btn{
-    position: absolute;
-    left:50%;
-    top: 85%;
-    transform: translate(-50%,-50%);
+    
+    
     width: 15rem;
     font-size: 3rem;
     border: none;
@@ -119,11 +117,12 @@ body{
     align-items: center;
     color: #fff;
     padding: 1rem;
-  appearance: none;
+  
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
   border: 0;
   border-radius: 6px;
   box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  
   
 }
     
@@ -149,8 +148,31 @@ h1{
 
     
 }
+
+.btn-wrap{
+    margin: 0 auto;
+    grid-row-start: 10;
+}
 .heading{
     grid-row-start: 2;
 }
 
 
+@media (max-width: 750px) { 
+    body{
+        display: grid;
+    }
+        .btn-wrap{
+            grid-row-start: 11;
+            
+            
+        }
+        h1{
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+       html{
+        font-size: 50%;
+       }
+
+ }
